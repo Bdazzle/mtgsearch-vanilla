@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>MTG catalogue</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="./magicapp.js"></script>
+<style>
+    th {
+        padding: 10px 100px 0px 10px;
+    }
+  table{
+      text-align: left;   
+  }
+    .amount{
+        width:40px;
+        height:20px;
+        box-sizing: border-box;
+    }
+    img{
+        height:auto;
+        width:120px;
+        display:block;
+        z-index:-1;
+    }
+    tr{
+        vertical-align:top;
+    }
+    .display{
+        opacity:0.5;
+    }
+    .cardSearch{
+        display:inline-block;
+    }
+    label{
+        display:inline-block;
+    }
+    td{
+        overflow: auto;
+    }
+    .langContainer{
+        overflow:auto;
+        max-height: 170px;
+        min-width: 150px;
+    }
+    .amountContainer div > *{
+        font-size:14px;
+        display:inline-block;
+        width:25%;
+    }
+    /*#prices{
+        font-size: 14px;
+    }
+    #prices > *{
+        display:inline-block;
+        width: 25%;
+    }*/
+    
+</style>
+<body>
+    <p> Card Search</p>
+    <input id="cardSearch" name="card" type="search" autocomplete="on">
+    <button id="getCard">Add Card</button>
+  <table id="cardInfo">
+        <tr id="labels">
+            <th id="cardTable">Card</th>
+            <th id="amountTable">Amount</th>
+            <th id="setTable">Set</th>
+            <th id="language">Language</th>
+            <th id="remove"></th>
+        </tr>
+    </table>
+    <br>
+    </body>
